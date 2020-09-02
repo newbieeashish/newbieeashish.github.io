@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Ashish Bisht</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
+
+   <!-- Script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+
+   <!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.png" >
+
+</head>
+
+<body>
+
+   <!-- Header
+   ================================================== -->
+   <header id="home">
+
+      <nav id="nav-wrap">
+
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+            <li><a class="smoothscroll" href="#about">About</a></li>
+            <li><a class="smoothscroll" href="#test">Timeline</a></li>
+            <li><a class="smoothscroll" href="#Skills">Skills</a></li>
+            <li><a class="smoothscroll" href="#portfolio">Projects</a></li>
+            
+         </ul> <!-- end #nav -->
+
+      </nav> <!-- end #nav-wrap -->
+
+      <div class="row banner">
+         <div class="banner-text">
+            <h1 class="responsive-headline">I'm Ashish Bisht.</h1>
+            <h3> I'm a <span>Graduate Student</span>, an aspiring <span>Data Scientist</span> and an experienced <span>Data Analyst.</span> 
+            I love to learn about technology and enable business to take data driven Decision. Let's <a class="smoothscroll" href="#about">start scrolling</a>
+            and learn more <a class="smoothscroll" href="#about">about me</a>.</h3>
+            <hr />
+            <ul class="social">
+               
+               
+               
+               <li><a href="https://www.linkedin.com/in/bishtashish708/"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://github.com/newbieeashish"><i class="fa fa-github"></i></a></li>
+               
+               <li><a href="mailto:bishtashish708@gmail.com"><i class="fa fa-envelope"></i></a></li>
+            </ul>
+         </div>
+      </div>
+
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+      </p>
+
+   </header> <!-- Header End -->
+
+
+   <!-- About Section
+   ================================================== -->
+   <section id="about">
+
+      <div class="row">
+
+         <div class="three columns">
+
+            <img class="profile-pic"  src="images/profilepic.png" alt="" />
+
+         </div>
+
+         <div class="nine columns main-col">
+
+            <h2>About Me</h2>
+
+            <p>I am currently pursuing a Master's degree in Information Technology and Management, with focus in data science.
+               I have prior experience of more than 3 years as Data Analyst with Cognizant Technology Solutions and more than 1 year experience 
+               as a Co-Founder of startup.
+               I have worked on a variety of academic and competitive machine learning and deep learning projects, 
+               I will showcase some of my projects here, and link them to their GitHub repositories.
+
+               During my free time, I like to play online games and code. I enjoy working on HackerRank and leetcode challenges, 
+               which help sharpen my mind and improve on my problem solving skills.
+            </p>
+
+            <div class="row">
+
+               <div class="columns contact-details">
+
+                  <h2>Contact Details</h2>
+                  <p class="address">
+						   <span>Ashish Bisht</span><br>
+						   <span>7740 mccallum blvd 337<br>
+						         Dallas, Texas 75252 US
+                     </span><br>
+						   <span>(682)234-5288</span><br>
+                     <a href="https://newbieeashish.github.io/"><span>newbieeashish.github.io</span></a>
+					   </p>
+
+               </div>
+
+               
+
+            </div> <!-- end row -->
+
+         </div> <!-- end .main-col -->
+
+      </div>
+
+   </section> <!-- About Section End-->
+
+
+   
+      <!--Test--
+      ---------------------------------------- -->
+      <style>
+         * {
+           box-sizing: border-box;
+         }
+         
+         body {
+           background-color: #ffffff;
+           font-family: Helvetica, sans-serif;
+         }
+         
+         /* The actual timeline (the vertical ruler) */
+         .timeline {
+           position: relative;
+           max-width: 1200px;
+           margin: 0 auto;
+         }
+         
+         /* The actual timeline (the vertical ruler) */
+         .timeline::after {
+           content: '';
+           position: absolute;
+           width: 6px;
+           background-color: #11ABB0;
+           top: 0;
+           bottom: 0;
+           left: 50%;
+           margin-left: -3px;
+         }
+         
+         /* Container around content */
+         .container {
+           padding: 10px 40px;
+           position: relative;
+           background-color: inherit;
+           width: 50%;
+         }
+         
+         /* The circles on the timeline */
+         .container::after {
+           content: '';
+           position: absolute;
+           width: 25px;
+           height: 25px;
+           right: -8px;
+           background-color: white;
+           border: 4px solid ;
+           top: 15px;
+           border-radius: 40%;
+           z-index: 2;
+         }
+         
+         /* Place the container to the left */
+         .left {
+           left: 0;
+         }
+         
+         /* Place the container to the right */
+         .right {
+           left: 50%;
+         }
+         
+         /* Add arrows to the left container (pointing right) */
+         .left::before {
+           content: " ";
+           height: 0;
+           position: absolute;
+           top: 22px;
+           width: 0;
+           z-index: 1;
+           right: 30px;
+           border: medium solid gray;
+           border-width: 10px 0 10px 10px;
+           border-color: transparent transparent transparent gray;
+         }
+         
+         /* Add arrows to the right container (pointing left) */
+         .right::before {
+           content: " ";
+           height: 0;
+           position: absolute;
+           top: 22px;
+           width: 0;
+           z-index: 1;
+           left: 30px;
+           border: medium solid gray;
+           border-width: 10px 10px 10px 0;
+           border-color: transparent gray transparent transparent;
+         }
+         
+         /* Fix the circle for containers on the right side */
+         .right::after {
+           left: -16px;
+         }
+         
+         /* The actual content */
+         .content {
+           padding: 20px 30px;
+           background-color: rgb(169, 208, 240);
+           position: relative;
+           border-radius: 6px;
+         }
+         
+         /* Media queries - Responsive timeline on screens less than 600px wide */
+         @media screen and (max-width: 600px) {
+           /* Place the timelime to the left */
+           .timeline::after {
+           left: 31px;
+           }
+           
+           /* Full-width containers */
+           .container {
+           width: 100%;
+           padding-left: 70px;
+           padding-right: 25px;
+           }
+           
+           /* Make sure that all arrows are pointing leftwards */
+           .container::before {
+           left: 60px;
+           border: medium solid gray;
+           border-width: 10px 10px 10px 0;
+           border-color: transparent gray transparent transparent;
+           }
+         
+           /* Make sure all circles are at the same spot */
+           .left::after, .right::after {
+           left: 15px;
+           }
+           
+           /* Make all right containers behave like the left ones */
+           .right {
+           left: 0%;
+           }
+         }
+         </style>
+         </head>
+         <body>
+         <section id="test">
+         <div class="timeline">
+           <div class="container left">
+             <div class="content">
+               <h3>Aug 2020 - Present</h3>
+               <p style="color:black;"> Fennix Commerce <br>Data Science Intern 
+                  <li style="color:black;">Designed dashboards and reports by extracting data from AWS S3 buckets which indicated the performance of 6+ KPI’s ensuring more than 85% increment in the client’s delivery accuracy.
+                  </li>
+                  <li style="color:black;">Building a model to predict the number of days required to deliver the shipment of package ordered by customers, the initial phase model has led to the accuracy of more than 86% which was achieved using XGBOOST.</li>
+               </p>
+             </div>
+           </div>
+           <div class="container right">
+             <div class="content">
+               <h3>Aug 2019 - Present</h3>
+               <p style="color:black;">The University of Texas at Dallas <br>
+                  Master in Information Technology and Management
+               </p>
+             </div>
+           </div>
+           <div class="container left">
+             <div class="content">
+               <h3>May 2016 - Jul 2019</h3>
+               <p style="color:black;">Cognizant Technology Solutions<br>
+               Data Analyst
+               <li style="color:black;">Created data report in MS Excel and motorized the reports by making data connections to excel using SQL which improved the ticket analyzing efficiency via 70%, which also led to the automation of repetitive tickets.</li>
+               <li style="color:black;">Led a team of 4 to implement the Automation of Various modules in PeopleSoft (ERP) Financial Management System using Automation Tool Peoplesoft Test Framework which expedited the testing process via 3 folds time.</li>
+               <li style="color:black;">Developed an interactive Tableau dashboard to track and measure data defects using SQL to reduce the tracking effort by 75%.</li>
+               <li style="color:black;">Coordinated with the Onsite team to enhance their customer experience by identifying 5+ KPIs and presented it to the business team using tableau.</li>
+            </p>
+             </div>
+           </div>
+           <div class="container right">
+             <div class="content">
+               <h3>Jul 2015 - Aug 2016</h3>
+               <p style="color:black;">ELC <br>Co-Founder
+                  <li style="color:black;">Responsible for designing educational content, connecting with organizations, and promotion in social media platforms to increase visibility.</li>
+                  <li style="color:black;">Partnered with 10 Colleges which resulted in more than 15k active students in our platform in less than 4 months.</li>
+                  <li style="color:black;">Engaged with 5+ start-ups and assisted in their recruitment process, which resulted in the hiring of more than 20 students.</li>
+               </p>
+
+             </div>
+           </div>
+           <div class="container left">
+             <div class="content">
+               <h3>Aug 2011 - Aug 2015</h3>
+               <p style="color:black;">Uttarakhand Technical University<br>
+                  B.Tech Electronics and Communication Engineering</p>
+             </div>
+           </div>
+           
+           
+         </div>
+      </section>
+
+
+
+      <!-- Skills
+      ----------------------------------------------- -->
+      <section id = "Skills">
+      <div class="row skill">
+
+         <div class="three columns header-col">
+            <h1  style="color:white;"><span>Skills</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <p style="color:white">
+               <li style="color:white;">
+                  <b>PROGRAMMING</b> <br></br>
+                  Python, R, SQL, Oracle PeopleSoft, HTML5, CSS3, javascript
+               </li>
+               <li style="color:white;">
+                  <b>Tools</b> <br></br>
+                  Advanced Excel, Tableau, Power BI, Jira, ServiceNow, GSuite
+               </li>
+               <li style="color:white;">
+                  <b>ML Algorithms</b> <br></br>
+                  k-NN, Linear/Logistic Regression, Decision Tree, Support Vector (SVM), Neural Networks, Random Forest, Gradient Boosting, Ridge and Lasso Regression, CNN, RNN
+
+               </li>
+               <li style="color:white;">
+                  <b>Big Data Technologies</b> <br></br>
+                  Hadoop, Hive, Impala, Spark, Flume, Hibernate Query Language
+               </li>
+               <li style="color:white;">
+                  <b>Databases</b> <br></br>
+                  MySQL, NoSql (Mongo DB), Oracle10g/11g/12c
+               </li>
+               <li style="color:white;">
+                  <b>Libraries</b> <br></br>
+                  TensorFlow, Keras, PyTorch, Pandas, NumPy, Matplotlib, Plotly Scikit-Learn, OpenCV, NLTK
+               </li>
+ 
+ 
+               
+               
+               
+            </p>
+
+				
+
+			</div> <!-- main-col end -->
+
+      </div> <!-- End skills -->
+   </section>
+   
+
+
+   <!-- Portfolio Section
+   ================================================== -->
+   <section id="portfolio">
+
+      <div class="row">
+
+         <div class="twelve columns collapsed">
+
+            <h1>Check Out Some of My Works.</h1>
+
+            <!-- portfolio-wrapper -->
+            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+
+          	   <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-01" title="">
+                        <img alt="" src="images/portfolio/Architectural Heritage Elements.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Architectural Heritage Elements</h5>
+                              <p>Architectural Heritage Elements Prediction</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-02" title="">
+                        <img alt="" src="images/portfolio/discount.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>discount</h5>
+                              <p>Lowest-pricing model for E-commerce company</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-03" title="">
+                        <img alt="" src="images/portfolio/dance_form.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>dance form</h5>
+                              <p>Predicting Different Indian Dance Forms</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-04" title="">
+                        <img alt="" src="images/portfolio/TV_script.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Tv Script</h5>
+                              <p>Generate a new, fake" TV script, based on patterns it recognizes</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-05" title="">
+                        <img alt="" src="images/portfolio/plant.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Plant Pathology Challenge</h5> 
+                              <p>Accurately classify a given image from testing dataset into different diseased category or a healthy leaf</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-06" title="">
+                        <img alt="" src="images/portfolio/pet.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Adopt a Pet</h5>
+                              <p> Determine type and breed of the animal based on it's physical attributes and other factors</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-07" title="">
+                        <img alt="" src="images/portfolio/leet.png">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Leet Code</h5>
+                              <p>Leet Code Algorithms Solutions</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-08" title="">
+                        <img alt="" src="images/portfolio/fake_news.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Fake News</h5>
+                              <p>Fake News Detector</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div>  <!-- item end -->
+
+            </div> <!-- portfolio-wrapper end -->
+
+         </div> <!-- twelve columns end -->
+
+
+         <!-- Modal Popup
+	      --------------------------------------------------------------- -->
+
+         <div id="modal-01" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-Architectural Heritage Elements.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>Architectural Heritage Elements</h4>
+			      <p>This project is end to end implementation to predict different Architectural Heritage Elements using transfer learning and streamlit.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Machine Learning</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="https://github.com/newbieeashish/Architectural-Heritage-Elements-Prediction" target="_blank">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-01 End -->
+
+         <div id="modal-02" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-discount.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>Price Slashing</h4>
+			      <p>Built a predictive model using Ensembling Methods that helps E-commerce company set up a lowest-pricing model for products.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Machine Learning</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="https://github.com/newbieeashish/Slashing_prices_hackerearth" target="_blank">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-02 End -->
+
+         <div id="modal-03" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-dance_form.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>Dance Forms</h4>
+			      <p>Implemented Deep Learning Model for predicting various Indian Dance Form, this was the part of the HackerEarth Competition</p>
+               <span class="categories"><i class="fa fa-tag"></i>Deep Learning, Machine Learning/span>
+		      </div>
+
+            <div class="link-box">
+               <a href="https://github.com/newbieeashish/Dance_Form_hackerearth" target="_blank">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-03 End -->
+
+         <div id="modal-04" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-TV_script.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>Tv Script Generation</h4>
+			      <p>Created the Neural Network that generates a new, fake" TV script, based on patterns it recognizes.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Machine Learning, Deep Learning</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="https://github.com/newbieeashish/TVScriptGeneration/tree/master/tvscripts" target="_blank">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-04 End -->
+
+         <div id="modal-05" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-plant.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>Plant Pathology</h4>
+			      <p>Objectives of ‘Plant Pathology Challenge’ are to train a model using images of training dataset to 1) Accurately classify a given image from testing dataset into different diseased category or a healthy leaf 2) Accurately distinguish between many diseases, sometimes more than one on a single leaf.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Machine Learning, Deep Learning</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="https://github.com/newbieeashish/Plant-Pathology-2020---FGVC7" target="_blank">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-05 End -->
+
+         <div id="modal-06" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-pet.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>Adopting a Pet</h4>
+			      <p>A leading pet adoption agency is planing to create a virtual tour experience for their customers showcasing all animals that are available in their shelter. To enable this tour experience, you are required to build a machine learning model that determines type and breed of the animal based on it's physical attributes and other factors</p>
+               <span class="categories"><i class="fa fa-tag"></i>Machine Learning</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="https://github.com/newbieeashish/HackerEarth-Machine-Learning-challenge-Adopt-a-buddy" target="_blank">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-06 End -->
+
+         <div id="modal-07" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-leet.png" alt="" />
+
+		      <div class="description-box">
+			      <h4>Leet Code Solutions</h4>
+			      <p>Leet Code algorithms solutions written in Python</p>
+               <span class="categories"><i class="fa fa-tag"></i>Data Structures, Algorithms</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="https://github.com/newbieeashish/LeetCode_Algot" target="_blank">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-07 End -->
+
+         <div id="modal-08" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-fake_news.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>Fake News Detector</h4>
+			      <p>The aim of this notebook is to provide an example of how to train an NLP model to detect fake news.
+                  Fake news is becoming a bigger and bigger issue in society, with disinformation becoming more widely shared on social media.
+                  So, a model to detect and filter out such stories would help to regain a lot of trust in the news we consume.
+                  The dataset used is approx. 20,000 examples of both real and fake news stories respectively, consisting of a title, text, subject and date.
+                  This notebook will preprocess the text, use GloVe word embeddings to map each word to a numeric vector, then pass the text through an LSTM network.
+                  The network will then classify each example as real or fake.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Machine Learning, Deep Learning</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="https://github.com/newbieeashish/Fake_news_detector" target="_blank">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-01 End -->
+
+
+      </div> <!-- row End -->
+
+   </section> <!-- Portfolio Section End-->
+
+
+  
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+            <ul class="social-links">
+               
+               <li><a href="https://www.linkedin.com/in/bishtashish708/"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://github.com/newbieeashish"><i class="fa fa-github"></i></a></li>
+               
+               <li><a href="mailto:bishtashish708@gmail.com"><i class="fa fa-envelope"></i></a></li>
+            </ul>
+
+            
+
+         </div>
+
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+      </div>
+
+   </footer> <!-- Footer End-->
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/init.js"></script>
+
+</body>
+
+</html>
